@@ -30,7 +30,6 @@ default-storage-engine=INNODB
 # 'mysqld' is not recognized as an internal or external command,
 # operable program or batch file.
    
-# 
 2.暂留
 
 3.数据库基础知识
