@@ -6,31 +6,32 @@ SQL
 1.软件安装及服务器设置。
    教程 http://www.runoob.com/mysql/mysql-install.htm
 
-# 创建my.ini配置文件，下载的免安装版客户端。
+创建my.ini配置文件，下载的免安装版客户端。
 
 [mysql]
-# 设置mysql客户端默认字符集
+设置mysql客户端默认字符集
 default-character-set=utf8
 [mysqld]
-# 设置3306端口
+设置3306端口
 port = 3306
-# 设置mysql的安装目录
+设置mysql的安装目录
 basedir=D:\\web\\mysql-8.0.15-winx64
-# 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
-# datadir=C:\\web\\sqldata
-# 允许最大连接数
+设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
+datadir=C:\\web\\sqldata
+允许最大连接数
 max_connections=20
-# 服务端使用的字符集默认为8比特编码的latin1字符集
+服务端使用的字符集默认为8比特编码的latin1字符集
 character-set-server=utf8
-# 创建新表时将使用的默认存储引擎
+创建新表时将使用的默认存储引擎
 default-storage-engine=INNODB
 
 
-# 安装始终报错。D:\web\mysql-8.0.15-winx64\bin>mysqld install
-# 'mysqld' is not recognized as an internal or external command,
-# operable program or batch file.
+安装始终报错。D:\web\mysql-8.0.15-winx64\bin>mysqld install
+'mysqld' is not recognized as an internal or external command,
+operable program or batch file.
    
-2.暂留
+最后用官方的直接安装包搞定
+
 
 3.数据库基础知识
 数据库定义：数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。
