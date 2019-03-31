@@ -1,9 +1,36 @@
 # SQL
 SQL
+任务一是软件安装和配置，以及一些数据库理论知识储备。
+学习内容是指需要在博客文章中总结的知识点，包括但不仅限于这些知识点。比如一些安装过程中的报错及解决办法也可以写。
 
 1.软件安装及服务器设置。
    教程 http://www.runoob.com/mysql/mysql-install.htm
+
+# 创建my.ini配置文件，下载的免安装版客户端。
+
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+[mysqld]
+# 设置3306端口
+port = 3306
+# 设置mysql的安装目录
+basedir=D:\\web\\mysql-8.0.15-winx64
+# 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
+# datadir=C:\\web\\sqldata
+# 允许最大连接数
+max_connections=20
+# 服务端使用的字符集默认为8比特编码的latin1字符集
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+
+
+# 安装始终报错。D:\web\mysql-8.0.15-winx64\bin>mysqld install
+# 'mysqld' is not recognized as an internal or external command,
+# operable program or batch file.
    
+# 
 2.暂留
 
 3.数据库基础知识
@@ -28,7 +55,9 @@ RDBMS 即关系数据库管理系统(Relational Database Management System)的�
 
 
 4.MySQL数据库管理系统
-数据库
-数据表
-视图
-存储过程
+数据表：你往文件柜里放资料时，并不是随便将它们扔进某个抽屉就完事了，而
+是在文件柜中创建文件，然后将相关的资料放入特定的文件中。
+在数据库领域中，这种文件称为表。表是一种结构化的文件，可用来存 储某种特定类型的数据。表可以保存顾客清单、产品目录，或者其他信 息清单。
+视图：通俗的讲，视图就是一条SELECT语句执行后返回的结果集。所以我们在创建视图的时候，主要的工作就落在创建这条SQL查询语句上。
+存储过程：存储过程是为了完成特定功能的SQL语句集，经编译创建并保存在数据库中，用户可通过指定存储过程的名字并给定参数(需要时)来调用执行。
+
